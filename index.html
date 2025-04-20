@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
 </head>
 <body>
@@ -11,19 +13,22 @@
         <h1>World Clock</h1>
         <select name="" id="">
             <option value="">Select a city...</option>
-            <option value="">Johannesburg</option>
-            <option value="">Rotterdam</option>
-            <option value="">Tokyo</option>
+            <option value="current">My current location</option>
+            <option value="Africa/Johannesburg">Johannesburg</option>
+            <option value="Europe/Rotterdam">Rotterdam</option>
+            <option value="Asia/Tokyo">Tokyo</option>
         </select>
-        <div class="city">
-            <h2>Johannesburg</h2>
-            <div class="date">April 20th 2025</div>
-            <div class="time">12:41:00 PM</div>
-        </div>
-        <div class="city">
-            <h2>Rotterdam</h2>
-            <div class="date">April 20th 2025</div>
-            <div class="time">12:41:00 PM</div>
+        <div class="cities">
+            <div class="city" id="johannesburg">
+                <h2>Johannesburg</h2>
+                <div class="date">April 20th 2025</div>
+                <div class="time">12:41:00 PM</div>
+            </div>
+            <div class="city" id="rotterdam">
+                <h2>Rotterdam</h2>
+                <div class="date">April 20th 2025</div>
+                <div class="time">12:41:00 PM</div>
+            </div>
         </div>
     </main>
     <footer>Built by <a href="https://github.com/Melissa-Henry-Dev">Melissa Henry</a>, code hosted on <a href="https://github.com/Melissa-Henry-Dev/World-Clock">Github</a> Website hosted on <a href="https://world-clock-melissa.netlify.app/">Netlify</a></footer>
